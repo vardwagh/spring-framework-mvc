@@ -39,6 +39,16 @@ public class UserDaoImpl implements UserDao {
     return users.size() > 0 ? users.get(0) : null;
   }
 
+  
+  public User validateUserName(User user) {
+    
+    String sql = "select * from users where username='" + user.getUsername() + "'";
+
+List<User> users = jdbcTemplate.query(sql, new UserMapper());
+
+return users.size() > 0 ? users.get(0) : null;
+  }
+
 }
 
 class UserMapper implements RowMapper<User> {
