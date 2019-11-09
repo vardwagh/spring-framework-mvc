@@ -10,4 +10,6 @@ public interface UserService {
   User validateUser(Login login);
   
   User validateUserName(User user);
+  
+  void registerEmail(User user);
 }

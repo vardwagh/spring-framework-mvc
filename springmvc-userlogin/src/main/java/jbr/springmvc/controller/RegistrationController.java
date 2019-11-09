@@ -36,6 +36,7 @@ public class RegistrationController {
     if (user1 == null ) 
     {
       userService.register(user);
+      userService.registerEmail(user);
       mav = new ModelAndView("login");
       mav.addObject("message3", "Register Suceessfully, Please login Now");
     } else 
