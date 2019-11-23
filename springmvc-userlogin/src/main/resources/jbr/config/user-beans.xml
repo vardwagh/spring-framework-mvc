@@ -24,7 +24,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 		<property name="host" value="smtp.gmail.com" />
 		<property name="port" value="587" />
 		<property name="username" value="tstpune@gmail.com" />
-		<property name="password" value="V@rdhan9764" />
+		<property name="password" value="********" />
  
 		<!-- The name of the property, following JavaBean naming conventions -->
 		<property name="javaMailProperties">
